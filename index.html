@@ -20,13 +20,193 @@
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #08090d;
+            color: white;
+            font-family: "Outfit", Arial, sans-serif;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            padding: 0 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(8, 9, 13, 0.92);
+            border-bottom: 1px solid rgba(255,255,255,.08);
+            backdrop-filter: blur(12px);
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #f064a5;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+        }
+
+        .nav-links a {
+            color: #999ba5;
+            font-size: 14px;
+            transition: .2s;
+        }
+
+        .nav-links a:hover {
+            color: #f064a5;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 110px 7% 80px;
+            text-align: center;
+        }
+
+        .hero {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 7px 14px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(240,100,165,.6);
+            border-radius: 30px;
+            color: #f064a5;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .5px;
+        }
+
+        h1 {
+            font-family: "Poppins", Arial, sans-serif;
+            font-size: clamp(50px, 8vw, 88px);
+            line-height: 1;
+            font-weight: 800;
+            margin-bottom: 24px;
+        }
+
+        h1 span {
+            color: #f064a5;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto;
+            color: #999ba5;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: .2s;
+        }
+
+        .btn-primary {
+            background: #f064a5;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #ed75ad;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,.12);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            border-color: #f064a5;
+            color: #f064a5;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: #555760;
+            font-size: 11px;
+            background: rgba(8, 9, 13, .85);
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 0 5%;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .page {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
 <body>
-
-    <!-- NAVIGATION -->
 
     <nav>
 
@@ -40,15 +220,15 @@
                 Home
             </a>
 
-            <a href="download.html">
+            <a href="#download">
                 Download
             </a>
 
-            <a href="support.html">
+            <a href="#support">
                 Support
             </a>
 
-            <a href="donation.html">
+            <a href="#donate">
                 Donate
             </a>
 
@@ -65,11 +245,9 @@
     </nav>
 
 
-    <!-- HOME -->
-
     <main class="page">
 
-        <div class="hero container">
+        <div class="hero">
 
             <div class="badge">
                 HOPE — CHAPTER 5 SEASON 1
@@ -88,17 +266,19 @@
             <div class="hero-buttons">
 
                 <a
-                    href="download.html"
+                    href="#download"
                     class="btn btn-primary"
                 >
                     Download Hope
                 </a>
 
                 <a
-                    href="donation.html"
+                    href="https://discord.gg/hkMXKRY2qv"
                     class="btn btn-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    Support Hope
+                    Join Discord
                 </a>
 
             </div>
@@ -108,12 +288,8 @@
     </main>
 
 
-    <!-- FOOTER -->
-
     <footer>
-
         © 2026 Hope. All rights reserved.
-
     </footer>
 
 </body>
