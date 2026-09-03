@@ -1,1 +1,2 @@
-# saturn-website
+# hope website
+I made the hope website using HTML, CSS, and JavaScript. I put everything in the index.html file and hosted it with GitHub Pages. The website is in the root of the main branch, and I added the image to the same place. I used CSS for the design and JavaScript for the color changer.
