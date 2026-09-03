@@ -217,7 +217,7 @@
             color: #D4AF37;
         }
 
-        .section-content p {
+        .section-content > p {
             color: #999ba5;
             font-size: 15px;
             line-height: 1.7;
@@ -227,6 +227,31 @@
 
         .download-box {
             margin-top: 30px;
+        }
+
+        .faq {
+            margin-top: 35px;
+            display: grid;
+            gap: 12px;
+            text-align: left;
+        }
+
+        .faq-item {
+            background: #101117;
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .faq-item h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            color: #999ba5;
+            font-size: 14px;
+            line-height: 1.7;
         }
 
         footer {
@@ -276,8 +301,7 @@
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#download">Download</a>
-            <a href="#support">Support</a>
-            <a href="#donate">Donate</a>
+            <a href="#faq">FAQ</a>
 
             <a
                 href="https://discord.gg/hkMXKRY2qv"
@@ -318,8 +342,8 @@
                         Download Hope
                     </a>
 
-                    <a href="#support" class="btn btn-secondary">
-                        Support Hope
+                    <a href="#faq" class="btn btn-secondary">
+                        View FAQ
                     </a>
                 </div>
 
@@ -351,16 +375,57 @@
             </div>
         </section>
 
-        <section id="support" class="section-dark">
+        <section id="faq" class="section-dark">
             <div class="section-content">
 
                 <h2>
-                    <span>Support</span>
+                    <span>FAQ</span>
                 </h2>
 
                 <p>
-                    Need help with Hope? Join the Discord and let us know.
+                    Here are some common questions about Hope.
                 </p>
+
+                <div class="faq">
+
+                    <div class="faq-item">
+                        <h3>When is Hope releasing?</h3>
+                        <p>
+                            Hope is currently in development. Release information
+                            will be announced in the Discord.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What platforms will Hope support?</h3>
+                        <p>
+                            Platform availability will be announced when more
+                            information is available.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Where can I get updates?</h3>
+                        <p>
+                            Join the Hope Discord to stay updated on development
+                            and the release.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Didn't find your problem?</h3>
+                        <p>
+                            Make a ticket in <a
+                                href="https://discord.gg/hkMXKRY2qv"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="color:#D4AF37;"
+                            >discord.gg/hkMXKRY2qv</a> and a member of the team
+                            will help you.
+                        </p>
+                    </div>
+
+                </div>
 
                 <div class="download-box">
                     <a
@@ -372,21 +437,6 @@
                         Join Discord
                     </a>
                 </div>
-
-            </div>
-        </section>
-
-        <section id="donate">
-            <div class="section-content">
-
-                <h2>
-                    <span>Donate</span>
-                </h2>
-
-                <p>
-                    Donations aren't available right now. If that changes,
-                    the information will be posted here.
-                </p>
 
             </div>
         </section>
